@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sticky Navigation and Card Overlay</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+        }
+
+
+        nav {
+
+            position: sticky;
+
+            top: 0;
+
+            background-color: #222;
+
+            padding: 20px;
+
+            text-align: center;
+
+            z-index: 100;
+        }
+
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            margin: 20px;
+        }
+
+
+        .container {
+
+            padding: 40px;
+        }
+
+
+        .card {
+
+            position: relative;
+
+            width: 400px;
+
+            margin: auto;
+        }
+
+
+        .card img {
+
+            width: 100%;
+
+            display: block;
+        }
+
+
+        .overlay {
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            background-color:
+                rgba(0, 0, 0, 0.7);
+
+            color: white;
+
+            padding: 20px;
+        }
+
+
+        .content {
+
+            height: 1000px;
+
+            padding: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<nav>
+
+    <a href="#">Home</a>
+
+    <a href="#">About</a>
+
+    <a href="#">Projects</a>
+
+    <a href="#">Contact</a>
+
+</nav>
+
+
+<div class="container">
+
+    <div class="card">
+
+        <img
+            src="https://via.placeholder.com/400x250"
+            alt="Project Image"
+        >
+
+        <div class="overlay">
+
+            <h2>My Project</h2>
+
+            <p>
+                Student Profile System
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="content">
+
+    <h2>Scroll Down</h2>
+
+    <p>
+        The navigation bar remains visible
+        while scrolling.
+    </p>
+
+    <p>
+        This happens because position: sticky
+        is used in the navigation.
+    </p>
+
+    <p>
+        Email: atharv.tyagi1308@gmail.com
+    </p>
+
+    <p>
+        Phone: 9019886234
+    </p>
+
+</div>
+
+
+<footer>
+
+    <p>&copy; 2026 Atharv Tyagi</p>
+
+</footer>
+
+
+</body>
+</html>

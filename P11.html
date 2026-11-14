@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>The Daily News</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family: Georgia, serif;
+
+            background-color: #f5f5f5;
+        }
+
+
+        header {
+
+            text-align: center;
+
+            padding: 30px;
+
+            background-color: #222;
+
+            color: white;
+        }
+
+
+        header h1 {
+
+            font-size: 50px;
+
+            margin: 0;
+        }
+
+
+        .newspaper {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 2fr 1fr;
+
+            gap: 20px;
+
+            padding: 30px;
+        }
+
+
+        .column {
+
+            background-color: white;
+
+            padding: 20px;
+        }
+
+
+        .headline {
+
+            grid-column: 2;
+
+            grid-row: 1;
+        }
+
+
+        .headline h2 {
+
+            font-size: 36px;
+        }
+
+
+        article {
+
+            border-bottom:
+                1px solid #aaa;
+
+            padding-bottom: 15px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .image {
+
+            height: 150px;
+
+            background-color: #ddd;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin-bottom: 15px;
+        }
+
+
+        footer {
+
+            text-align: center;
+
+            padding: 20px;
+
+            background-color: #222;
+
+            color: white;
+        }
+
+
+        @media (max-width: 800px) {
+
+            .newspaper {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .headline {
+
+                grid-column: auto;
+
+                grid-row: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<header>
+
+    <h1>
+        THE DAILY NEWS
+    </h1>
+
+    <p>
+        Today's News | September 2026
+    </p>
+
+</header>
+
+
+<main class="newspaper">
+
+
+    <section class="column">
+
+        <h2>
+            Side News
+        </h2>
+
+
+        <article>
+
+            <h3>
+                Technology Update
+            </h3>
+
+            <p>
+                New technologies are changing
+                the way people learn and work.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <h3>
+                Sports News
+            </h3>
+
+            <p>
+                Latest developments from
+                the world of sports.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <section class="column headline">
+
+
+        <div class="image">
+
+            Main News Image
+
+        </div>
+
+
+        <h2>
+            Technology Is Changing the Future
+        </h2>
+
+
+        <p>
+            Technology continues to influence
+            education, communication and
+            businesses around the world.
+        </p>
+
+
+        <article>
+
+            <h3>
+                Digital Learning
+            </h3>
+
+            <p>
+                Students are increasingly using
+                digital resources for learning.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <section class="column">
+
+        <h2>
+            Latest News
+        </h2>
+
+
+        <article>
+
+            <h3>
+                Education
+            </h3>
+
+            <p>
+                New learning methods are
+                being introduced.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <h3>
+                Business
+            </h3>
+
+            <p>
+                Businesses continue to adopt
+                new technologies.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <h3>
+                Science
+            </h3>
+
+            <p>
+                Scientists continue to make
+                new discoveries.
+            </p>
+
+        </article>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 The Daily News
+    </p>
+
+    <p>
+        Contact:
+        atharv.tyagi1308@gmail.com |
+        9019886234
+    </p>
+
+</footer>
+
+
+</body>
+</html>

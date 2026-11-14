@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Flexbox and Grid Layout</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f1f5f9;
+        }
+
+
+        /* FLEXBOX FOR NAVIGATION */
+
+        nav {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            background-color: #222;
+
+            padding: 20px 40px;
+
+            color: white;
+        }
+
+
+        .logo {
+
+            font-size: 25px;
+
+            font-weight: bold;
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            gap: 25px;
+        }
+
+
+        .nav-links a {
+
+            color: white;
+
+            text-decoration: none;
+        }
+
+
+        /* FLEXBOX FOR CARD ROW */
+
+        .cards {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+
+            padding: 30px;
+
+            justify-content: center;
+        }
+
+
+        .card {
+
+            background-color: white;
+
+            width: 220px;
+
+            padding: 25px;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 2px 8px gray;
+        }
+
+
+        /* GRID FOR 2D CONTENT */
+
+        .content {
+
+            display: grid;
+
+            grid-template-columns:
+                2fr 1fr;
+
+            grid-template-rows:
+                auto auto;
+
+            gap: 20px;
+
+            padding: 30px;
+        }
+
+
+        .main-content {
+
+            grid-column: 1;
+
+            grid-row: 1 / 3;
+
+            background-color: white;
+
+            padding: 30px;
+        }
+
+
+        .side-content {
+
+            background-color: white;
+
+            padding: 30px;
+        }
+
+
+        footer {
+
+            text-align: center;
+
+            background-color: #222;
+
+            color: white;
+
+            padding: 20px;
+        }
+
+
+        @media (max-width: 700px) {
+
+            nav {
+
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            .nav-links {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+
+            .content {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .main-content {
+
+                grid-column: auto;
+
+                grid-row: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- NAVIGATION USING FLEXBOX -->
+
+<nav>
+
+    <div class="logo">
+        Atharv Tyagi
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="#">Home</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Projects</a>
+
+        <a href="#">Contact</a>
+
+    </div>
+
+</nav>
+
+
+<h1 style="text-align:center;">
+
+    My Skills
+
+</h1>
+
+
+<!-- CARDS USING FLEXBOX -->
+
+<section class="cards">
+
+
+    <div class="card">
+
+        <h2>
+            HTML
+        </h2>
+
+        <p>
+            Webpage structure.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            CSS
+        </h2>
+
+        <p>
+            Webpage styling.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            Java
+        </h2>
+
+        <p>
+            Programming.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            DSA
+        </h2>
+
+        <p>
+            Problem solving.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- TWO-DIMENSIONAL CONTENT USING GRID -->
+
+<section class="content">
+
+
+    <div class="main-content">
+
+        <h2>
+            Main Content
+        </h2>
+
+        <p>
+            This section contains
+            two-dimensional content.
+        </p>
+
+        <p>
+            CSS Grid is used because
+            the content needs both
+            rows and columns.
+        </p>
+
+    </div>
+
+
+    <div class="side-content">
+
+        <h2>
+            Contact
+        </h2>
+
+        <p>
+            Email:
+            atharv.tyagi1308@gmail.com
+        </p>
+
+        <p>
+            Phone:
+            9019886234
+        </p>
+
+    </div>
+
+
+    <div class="side-content">
+
+        <h2>
+            Education
+        </h2>
+
+        <p>
+            Computer Science
+        </p>
+
+    </div>
+
+
+</section>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 Atharv Tyagi
+    </p>
+
+</footer>
+
+
+</body>
+</html>
