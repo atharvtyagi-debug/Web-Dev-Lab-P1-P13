@@ -1,0 +1,6 @@
+P3: Feature-branch Git workflow
+
+1. Created a feature branch.
+2. Made a change in P3.txt.
+3. Committed the changes.
+4. Pushed the feature branch to GitHub.
